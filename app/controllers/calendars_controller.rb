@@ -36,15 +36,8 @@ class CalendarsController < ApplicationController
       plan = plans.map do |plan|
         today_plans.push(plan.plan) if plan.date == @todays_date + x
       end
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-      wday_num = Date.today.wday|x|#Date.today.wdayを利用して添字となる数値を得る
-=======
->>>>>>> Stashed changes
 
-      wday_num = Date.today.wday#Date.today.wdayを利用して添字となる数値を得る
->>>>>>> 96b2d23904ed550095208bcb6c28241d10eebba8
+      wday_num = Date.today.wday|x|#Date.today.wdayを利用して添字となる数値を得る
         #もしもwday_numが7以上であれば、7を引く
       if  wday_num >= 7#条件式を記述
         wday_num = wday_num - 7
